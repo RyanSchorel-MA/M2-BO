@@ -76,3 +76,19 @@ body{background-color: #c3c2c2;
 
 
 }
+
+
+header,footer{
+  background-color: #222831;
+  color: white;
+  height: 60px;
+  position: fixed;
+  bottom:0px;
+
+  width: 10px;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
