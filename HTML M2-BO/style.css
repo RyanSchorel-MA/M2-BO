@@ -1,0 +1,75 @@
+.navbar {
+    background-color: rgb(114, 108, 108);
+    overflow: hidden;
+    color: white;
+    
+  }
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #F1C56D;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #dbae54;
+    color: white
+  }
+  
+  /* Style the logo image */
+  .logo {
+    height: 50px;
+    float: left;
+    padding: 16px;
+    width: 80px
+    
+  }
+
+img{
+  width: 300px;
+    height: 240px;
+    margin-top: 1px;
+    border:none;
+    font-size: 150%;
+    border-radius: 5px;
+    color: white;
+    border-radius: 35px;
+
+  
+ 
+    text-decoration:none;
+
+}
+.navbar {
+  background-color: gray;
+  overflow: hidden;
+}
+body{background-color: #c3c2c2;
+}
+.top{
+  width: 80px;
+  height: 80px;
+  background: #222831;
+  border:none;
+  font-family: 'Open Sans' , sans-serif;
+  font-size: 150%;
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  bottom:120px;
+  right: 120px;
+  text-decoration:none;
+
+
+}
