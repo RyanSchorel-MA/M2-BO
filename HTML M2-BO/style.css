@@ -56,26 +56,23 @@ img{
   overflow: hidden;
 }
 body{background-color: #c3c2c2;
+    margin-bottom: 120px;
+
 }
 .top{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background: #222831;
-  border:none;
-  font-family: 'Open Sans' , sans-serif;
-  font-size: 150%;
-  border-radius: 5px;
-  color: white;
+  border-radius: 50%;
   position: fixed;
   bottom:120px;
-  right: 120px;
-  text-decoration:none;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
+
+
 
 
 header,footer{
@@ -93,3 +90,20 @@ header,footer{
   justify-content: space-evenly;
 }
 
+/* Titel stukje witten tekst */
+
+.title-block {
+  background-color: white;
+  padding: 10px;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+}
+
+.ttitle-block {
+  background-color: white;
+  padding: 10px;
+  width: 480px;
+  height: 20px;
+  text-align: center;
+}
