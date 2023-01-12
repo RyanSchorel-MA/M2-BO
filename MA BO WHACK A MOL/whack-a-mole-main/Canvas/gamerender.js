@@ -9,10 +9,12 @@ export class Gamerender{
 
     render(){
         let g = this.g;
-        g.fillStyle = ("#93cec9");
+
+        g.fillStyle = ("#708090");
         g.fillRect(0,0,this.canvas.clientWidth,this.canvas.clientHeight);
-        g.fillStyle = ("#2e2874");
-        g.fillRect(0,0,10,10);
+
+        g.fillStyle = ("#000080");
+        g.fillRect(this.x,this.y,10,10);
 
 
     }
