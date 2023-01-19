@@ -1,33 +1,39 @@
 
 import { Gamerender } from "./gamerender.js";
 import { Gamelogic } from "./gamelogic.js";
+import {Rect} from "./Rect.js";
 
-let canvas = document.getElementById("canvas");
-let g = canvas.getContext("2d"); 
 
 
 
 class Game {
 
     constructor(){
+    this.canvas = document.getElementById("canvas");
+    this.g = canvas.getContext("2d"); 
         this.render = new Gamerender(this);
         this.logic = new Gamelogic(this);
-        this.x=0;
+        this.player = new Rect(0, 0, 40, 65);
         this.y=0;
     }
 
     init(){
-        let scope = this;
+        this.render.loadImages();
+    }
+    
+    startGame(){
 
-        this.renderer.canvas.addEventListener("mousemove", function(event){scope.logic.mouseMoved(event);})
+        let scope = this;
+        this.canvas.addEventListener("mousemove", function(event){scope.logic.mouseMoved(event);})
+       
+        this.canvas.addEventListener("mousedown", function(event){scope.logic.mousedown(event);})
+        this.canvas.addEventListener("mouseup", function(event){scope.logic.mouseup(event);})
+        
 
         setInterval(function () {scope.doGameFrame()},33);
+        
     }
 
-    mouseMoved(event){
-
-
-    }
 
     doGameFrame(){
         this.logic.logic();

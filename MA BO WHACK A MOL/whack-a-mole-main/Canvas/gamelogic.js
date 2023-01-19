@@ -1,6 +1,6 @@
 export class Gamelogic{
 
-    constructer(game){
+    constructor(game){
         this.game = game;
         
 
@@ -9,10 +9,26 @@ export class Gamelogic{
 
     mouseMoved(event){
 
-        this.game.x = event.offsetX;
-        this.game.x = event.offsetY;
+        this.game.player.x = event.offsetX;
+        this.game.player.y = event.offsetY;
 
     }
+
+    mousedown(event){
+
+     
+     
+    }
+
+    mouseup(event){
+
+        this.hammerIdle = Rect(0,0,100,100);
+        
+
+       }
+
+  
+
     logic(){
 
 
