@@ -13,4 +13,5 @@ Het moet er professioneel uitzien en de volgende dingen bevatten:
 - contectgegevens
 - kort inzicht over het museum
 - recenties
+- 
 sftp://34758@34758.hosts2.ma-cloud.nl/home/s34758/HTML%20M2-BO
