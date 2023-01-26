@@ -1,12 +1,12 @@
-export class Rect{
 
+export class Rect
+{
     constructor(x, y, w, h)
     {
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
-
-
+        this.x = 0.0 + x;
+        this.y = 0.0 + y;
+        this.w = 0.0 + w;
+        this.h = 0.0 + h;
     }
+
 }

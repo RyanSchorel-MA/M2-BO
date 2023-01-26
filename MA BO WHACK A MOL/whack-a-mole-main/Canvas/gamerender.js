@@ -1,4 +1,4 @@
-import {Rect} from "./Rect.js";
+import { Rect } from "./rect.js";
 
 export class Gamerender{
 
@@ -7,14 +7,15 @@ export class Gamerender{
         this.canvas = document.getElementById("canvas");
         this.g = canvas.getContext("2d");
         this.images = [];
-
         this.hammerIdle = new Rect(0,0,100,100);
+        this.hammerSlain = new Rect (0,50,100,100);
+        this.moleIdle = new Rect (10,10,100,100);
 
     }
 
     loadImages(){
         let scope = this;
-        let sources = ["Hammer.png"];
+        let sources = ["Hammer.png", "Hammer_Down.png", "moleIdle.png", "moleSlain.png"];
         let loaded = 0;
         for (let i = 0; i < sources.length; i++){
 
@@ -35,6 +36,12 @@ export class Gamerender{
         }
     }
 
+    renderSprite(img,pos){
+        let g = this.g
+        g.drawImage(img,pos.x, pos.y, pos.w, pos.h);
+
+    }
+
     render(){
         let g = this.g;
 
@@ -43,9 +50,11 @@ export class Gamerender{
 
         g.fillStyle = this.rectcolor;
         let player = this.game.player;
-        g.drawImage(this.images[0],player.x, player.y, player.w, player.h);
-        //g.fillRect(player.x, player.y, player.w, player.h);
-
+        this.renderSprite(this.images[2], this.game.mole);
+        this.renderSprite(this.images[this.game.playerSprite], this.game.player );
+        
+       
+        
       
 
 

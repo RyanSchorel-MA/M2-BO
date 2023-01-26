@@ -1,9 +1,13 @@
+import { overlap } from "./collisionmath.js";
+import { Rect } from "./rect.js";
 export class Gamelogic{
 
     constructor(game){
         this.game = game;
-        
 
+
+    
+    
 
     }
 
@@ -15,22 +19,25 @@ export class Gamelogic{
     }
 
     mousedown(event){
-
-     
+       
+        this.game.playerSprite = 1;
      
     }
 
     mouseup(event){
 
-        this.hammerIdle = Rect(0,0,100,100);
-        
-
+        this.game.playerSprite = 0;
        }
 
   
 
     logic(){
 
+        if(overlap(this.game.player, this.game.mole) == true && this.game.playerSprite == 1){
+
+            this.game.playerSprite = 1;
+            
+        }
 
     }
 }
