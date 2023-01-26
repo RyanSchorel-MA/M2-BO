@@ -16,6 +16,7 @@ class Game {
         this.player = new Rect(0, 0, 40, 65);
         this.slain = new Rect (50,50,40,65);
         this.mole = new Rect (90,100,100,100);
+        this.hole = new Rect (90,10,100,100)
         this.playerSprite = 0;
         this.moleState = 2;
         
