@@ -35,7 +35,7 @@ export class Gamelogic{
 
         if(overlap(this.game.player, this.game.mole) == true && this.game.playerSprite == 1){
 
-            this.game.playerSprite = 1;
+            this.game.moleState = 3;
             
         }
 

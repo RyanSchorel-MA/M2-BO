@@ -50,7 +50,7 @@ export class Gamerender{
 
         g.fillStyle = this.rectcolor;
         let player = this.game.player;
-        this.renderSprite(this.images[2], this.game.mole);
+        this.renderSprite(this.images[this.game.moleState], this.game.mole);
         this.renderSprite(this.images[this.game.playerSprite], this.game.player );
         
        
