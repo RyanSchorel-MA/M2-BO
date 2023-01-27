@@ -35,7 +35,7 @@ class Game {
         this.slain = new Rect (50,50,40,65);
         this.mole = [];
         this.hole = [];
-
+        //this.screen = 0;
         for (var i = 0; i < 3; i++){
             
             let mole = new Mole (new Rect(120 + (i*180),100,100,100));
@@ -72,6 +72,11 @@ class Game {
         this.render.loadImages();
     }
     
+    //newGame(){
+
+        //this.Score = 0;
+        //this.screen = 1;
+    //}
     startGame(){
 
         let scope = this;

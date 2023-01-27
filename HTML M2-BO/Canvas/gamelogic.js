@@ -15,18 +15,49 @@ export class Gamelogic{
 
     mouseMoved(event){
 
+        //if (this.game.screen != 1){
+
+            //return
+        //}
+
         this.game.player.x = event.offsetX;
         this.game.player.y = event.offsetY;
 
     }
 
     mousedown(event){
+
+        //if (this.game.screen ==0){
+
+            //this.game.newGame();
+            //return
+        //}
        
+        let hitI = this.hitMole()
+        if(hitI != -1){
+
+            //let mole = this.game.mole[hitI];
+            //mole.visible = false
+            this.game.Score++;
+            }
+
+
         this.game.playerSprite = 1;
      
     }
 
     mouseup(event){
+
+        //if (this.game.screen != 1){
+
+            //return
+        //}
+        let hitI = this.hitMole()
+        if(hitI != -1){
+
+            let mole = this.game.mole[hitI];
+            mole.visible = false
+        }
 
         this.game.playerSprite = 0;
        }
@@ -61,15 +92,11 @@ export class Gamelogic{
 
             
             this.game.Score += 1;
-            this.game.mole.y += 0.5
-            if(this.game.mole.y >= this.game.mole.y + 10){
-
-                mole = new Mole (new Rect(0,0,0,0));
+            
             }
 
         }
         
 
         
-    }
 }
