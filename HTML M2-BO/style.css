@@ -134,6 +134,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+button {
+  background-color: gray;
+ color: white;
+ text-align: center;
+ font-size: 26px;
+margin-left: 42%;
+ }
+
 
 
 
