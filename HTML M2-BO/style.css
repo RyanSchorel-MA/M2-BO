@@ -142,14 +142,14 @@ button {
  text-align: center;
  font-size: 26px;
 margin-left: 42%;
+margin-bottom: 15px;
 
  }
  button:hover {
- background-color: dark gray;
- color: white;
- text-align: center;
- font-size: 26px;
- }
+  background-color: #F1C56D;
+  color: white;
+  
+}
 
 
 
