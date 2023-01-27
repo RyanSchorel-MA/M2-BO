@@ -71,12 +71,8 @@ export class Gamerender{
             let mole = this.game.mole[i];
             if(mole.visible == true){
 
-                for (var i = 0; i < this.game.mole.length; i++){
-
-                    let mole = this.game.mole[i];
                     this.renderSprite(this.images[2], mole.rect);
         
-                }
             }
         }
 

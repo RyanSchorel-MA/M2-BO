@@ -27,19 +27,6 @@ export class Gamelogic{
 
     mousedown(event){
 
-        //if (this.game.screen ==0){
-
-            //this.game.newGame();
-            //return
-        //}
-       
-        let hitI = this.hitMole()
-        if(hitI != -1){
-
-            //let mole = this.game.mole[hitI];
-            //mole.visible = false
-            this.game.Score++;
-            }
 
 
         this.game.playerSprite = 1;
@@ -57,6 +44,7 @@ export class Gamelogic{
 
             let mole = this.game.mole[hitI];
             mole.visible = false
+            this.game.Score++;
         }
 
         this.game.playerSprite = 0;
