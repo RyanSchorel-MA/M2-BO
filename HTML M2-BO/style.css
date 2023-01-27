@@ -76,7 +76,9 @@ body {
     height: 240px;
     justify-content: center;
     padding: 15px;
+    
 }
+
 
 
 
@@ -142,8 +144,8 @@ button {
 margin-left: 42%;
 
  }
- button:gover {
-  background-color: dark gray;
+ button:hover {
+ background-color: dark gray;
  color: white;
  text-align: center;
  font-size: 26px;
