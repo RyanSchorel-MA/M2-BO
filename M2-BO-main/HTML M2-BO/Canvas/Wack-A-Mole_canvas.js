@@ -6,24 +6,6 @@ import { Rect } from "./rect.js";
 
 
 
-class Mole{
-    constructor(rect){
-
-        this.rect = rect;
-        this.visible = true;
-
-    }
-}
-
-class Hole{
-        constructor(rect){
-    
-            this.rect = rect;
-            this.visible = true;
-    
-        }
-}
-
 class Game {
 
     constructor(){
@@ -33,37 +15,9 @@ class Game {
         this.logic = new Gamelogic(this);
         this.player = new Rect(0, 0, 40, 65);
         this.slain = new Rect (50,50,40,65);
-        this.mole = [];
-        this.hole = [];
-
-        for (var i = 0; i < 3; i++){
-            
-            let mole = new Mole (new Rect(120 + (i*180),100,100,100));
-            this.mole.push(mole);
-
-        }
-        for (var i = 0; i < 2; i++){
-
-            let mole = new Mole (new Rect(200 + (i*200),300,100,100));
-            this.mole.push(mole);
-            
-        }
-
-        for (var i = 0; i < 3; i++){
-            
-            let hole = new Hole (new Rect(120 + (i*180),100,100,100));
-            this.hole.push(hole);
-
-        }
-        for (var i = 0; i < 2; i++){
-
-            let hole = new Hole (new Rect(200 + (i*200),300,100,100));
-            this.hole.push(hole);
-            
-        }
-       
+        this.mole = new Rect (90,100,100,100);
         this.playerSprite = 0;
-        this.Score = 0;
+        this.moleState = 2;
         
         this.y=0;
     }
