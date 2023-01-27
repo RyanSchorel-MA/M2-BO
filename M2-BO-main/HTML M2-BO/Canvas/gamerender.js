@@ -15,7 +15,7 @@ export class Gamerender{
 
     loadImages(){
         let scope = this;
-        let sources = ["Hammer.png", "Hammer_Down.png", "moleIdle.png", "moleSlain.png", "moleHole.png"];
+        let sources = ["Hammer.png", "Hammer_Down.png", "moleIdle.png", "moleSlain.png"];
         let loaded = 0;
         for (let i = 0; i < sources.length; i++){
 
@@ -42,14 +42,6 @@ export class Gamerender{
 
     }
 
-    renderUI(){
-
-        this.g.font = "20px Verdana";
-        this.g.fillStyle = "#FFFFFF";
-        this.g.fillText("Score: " + this.game.Score, 5,25);
-
-    }
-
     render(){
         let g = this.g;
 
@@ -58,40 +50,9 @@ export class Gamerender{
 
         g.fillStyle = this.rectcolor;
         let player = this.game.player;
-
-        for (var i = 0; i < this.game.hole.length; i++){
-
-            let hole = this.game.hole[i];
-            this.renderSprite(this.images[4], hole.rect);
-
-        }
-
-        for (var i = 0; i < this.game.mole.length; i++){
-
-            let mole = this.game.mole[i];
-            if(mole.visible == true){
-
-                for (var i = 0; i < this.game.mole.length; i++){
-
-                    let mole = this.game.mole[i];
-                    this.renderSprite(this.images[2], mole.rect);
+        this.renderSprite(this.images[this.game.moleState], this.game.mole);
+        this.renderSprite(this.images[this.game.playerSprite], this.game.player );
         
-                }
-            }
-        }
-
-        
-
-       
-
-    
-        
-        
-        //this.renderSprite(this.images[4], this.game.hole);
-        
-        this.renderSprite(this.images[this.game.playerSprite], this.game.player);
-        
-        this.renderUI()
        
         
       

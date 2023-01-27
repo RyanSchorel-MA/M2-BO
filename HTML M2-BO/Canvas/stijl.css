@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      background-color: #c3c2c2;
+  }
+  
+    nav {
+      background-color: rgb(114, 108, 108);
+      overflow: hidden;
+      color: white;
+      margin-bottom: 25px;
+      box-shadow: black 0px 4px;
+  }
+  
+    /* Style the links inside the navigation bar */
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 32px 20px;
+      text-decoration: none;
+    }
+    
+    /* Change the color of links on hover */
+    nav a:hover {
+      background-color: #F1C56D;
+      color: white;
+    }
+    
+    /* Add a color to the active/current link */
+    nav a.active {
+      background-color: #dbae54;
+      color: white
+    }
+    
+    /* Style the logo image */
+    .logo {
+      height: 50px;
+      float: left;
+      padding: 16px;
+      width: 80px
+      
+    }
+  
+  .box {
+    background-color: white;
+    width: 300px;
+    height: 600px;
+    border: 4px solid black;
+    margin: auto;
+    width: 1000px;
+    border-radius: 35px 35px;
+  }
+  
+  .box h1 {
+      background: rgb(114, 108, 108);
+      text-align: center;
+      color: white;
+      padding: 15px;
+      border-radius: 30px 30px 0px 0px;
+  }
+  
+  .box p {
+        padding: 50px;
+        font-size: 26px;
+  }
+  
+  .box img {
+      border-radius: 35px;
+      width: 300px;
+      height: 240px;
+      justify-content: center;
+      padding: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  .box-review {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    margin: auto;
+    width: 1000px;
+    border-radius: 35px 35px;
+    margin-bottom: 25px;
+  }
+  
+  .box-review h1 {
+      background: rgb(114, 108, 108);
+      text-align: center;
+      color: white;
+      padding: 15px;
+      border-radius: 30px 30px 0px 0px;
+  }
+  
+  .box-review p {
+        padding: 50px;
+        font-size: 26px;
+  }
+  
+  
+  footer {
+    background-color: #222831;
+    color: white;
+    height: 60px;
+  
+    width: 10px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+  
+  .top{
+    width: 70px;
+    height: 70px;
+    background: #222831;
+    border-radius: 50%;
+    position: fixed;
+    bottom:120px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    background-color: gray;
+   color: white;
+   text-align: center;
+   font-size: 26px;
+  margin-left: 42%;
+   }
+  
+  
+  
+  
